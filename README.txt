@@ -1,0 +1,1 @@
+Create a database "houserent_db" and import the given .sql in there to run it.
