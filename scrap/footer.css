@@ -1,0 +1,40 @@
+footer{
+	background-color: #069370;
+	line-height:80px;
+	height:80px;
+	text-align: center; 
+	font-size: 18pt;
+	margin: 15px 80px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+footer ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+footer ul.footer-widget li{
+	display: inline-block;
+	padding-right: 15px;
+	
+}
+footer ul li span i{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 2px solid grey;
+	border-radius: 100%;
+	color: #069370;
+	background: white;
+	font-size: 14px;
+	line-height: 25px;
+	margin-right: 5px;
+	padding-top: 10px;
+	padding-left:4px;
+	padding-right: 4px;
+	cursor: pointer;
+}
+.caption{
+	color: white;
+}

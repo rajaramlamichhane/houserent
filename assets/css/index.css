@@ -1,0 +1,395 @@
+* {
+	box-sizing: border-box;
+}
+
+/*-------header-------*/
+
+body{
+	margin:0;
+}
+
+/*-------home page----------*/
+
+.home-header{
+	display:flex;
+	flex-wrap:wrap;
+}
+.home-header .image{
+	flex:0 0 30%;
+	max-width:30%;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:100vh;
+}
+.home-header .content{
+	background: rgb(169,216,216);
+	flex: 0 0 70%;
+	max-width: 70%;
+	padding:0px 60px;
+	position:relative;
+}
+.home-header .content .content-wrapper{
+	position:absolute;
+	top:30%;
+	transform: translateY(-30%);
+}
+.home-header .content h1{
+	color: #666;
+	margin:0;
+	font-size:60px;
+	text-transform: capitalize;
+
+}
+.home-header .content h2{
+	color: #777;
+	font-size:30px;
+	margin-top:0;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+.home-header .content .line{
+	height:4px;
+	background:#00ad5f;
+	width:150px;
+}
+.home-header .content .social-icon{
+	padding: 20px 0;
+}
+
+.home-header .content .social-icon span{
+	padding-right: 15px;
+}
+
+.home-header .content .social-icon span .fa:hover{
+	background: -webkit-linear-gradient(right, #568844, #56d844, #56d844, #56888f);
+	color: #fff;
+}
+.home-header .content .social-icon span .fa{
+	border: 2px solid #00ad5f;
+	border-radius: 7px;
+	padding: 10px 12px;
+	background-color: #fff;
+	color: #777;
+	font-size: 20px;
+	cursor: pointer;
+}
+ .button-section a{
+
+	background: #fff;
+	font-size: 18px;
+	padding: 12px 45px;
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid #00ad5f;
+	
+}
+
+.button-section a:hover{
+	background-color: #333333;
+	color: #fff;
+}
+
+/*-----------------*/
+
+.container1{
+	margin: 100px 0;
+	background-color: #987;
+
+}
+
+
+.headline{
+	text-align: center;
+	font-size: 25px;
+	padding-top: 20px;
+}
+
+.row{
+	margin: 0 100px;
+
+}
+
+.both{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 6rem;
+}
+
+.both .img{
+	background-image: url('../images/bg-01.jpg');
+	height: 400px;
+	border: 1px none black;
+	border-radius: 10px;
+	display: flex;
+	margin-top: 30px;	
+}
+.both .img:hover{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('../images/1200px-Hong_Kong_Harbour_Night_2019-06-11.jpg');
+}
+
+
+.both .item{
+	max-width: 100%;		
+	text-align: center;
+	margin-top: 30px;
+	background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
+	color: #fff;	
+	padding: 3rem;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	font-size: ; 
+
+}
+
+main{
+	padding: 50px 0;	
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	margin: 40px 100px;
+
+}
+
+.card-single{
+	
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 4rem;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+
+}
+
+.card-single div:last-child span{
+	font-size: 3rem;
+	color: #333;
+
+}
+
+.card-single div:first-child span{
+	color: grey;
+}
+
+.card-single:last-child{
+	background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
+}
+
+.card-single:first-child{
+	background:linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.5)100%);
+	padding: 1rem;
+	display: block;
+}
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child span,
+.card-single:last-child div:last-child span{
+	color: #fff;
+}
+
+/*----------HEADER-----------*/
+
+header{
+	display: inline-block;
+	justify-content: space-between;
+	
+	position: fixed;
+
+	width: 100%;
+	top: 0;
+	background: rgb(169,216,216);
+	z-index: 100;
+	transition: left 300ms;
+}
+
+.menu-right{
+	text-align: right;
+}
+#menu li a{
+	text-decoration: none;
+	color: #fff;
+}
+#menu li{
+	display: inline-block;
+	margin: 20px;
+}
+
+#menu li a:hover{
+	background: #333333;
+	color: #fff;
+	transition: 0.5s;
+	padding: 0 20px;
+}
+
+.logo{
+	float: left;
+	color: #fff;
+	line-height: 50px;
+	font-size: 36px;
+	padding: 0 20px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#span{
+	margin: 0 20px;
+	font-size: 28px;
+	cursor: pointer;
+	display: none;
+	color: #fff;
+}
+
+/*===========Responsive home page=============*/
+@media only screen and (max-width: 800px){
+	#span{
+		display: block;
+		transition: 1s;
+		padding: 10px 0;
+	}
+	#menu li{
+		display: block;
+		text-align: center;
+		box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+		background-color: #00faf9;
+	}
+	#menu{
+		display: none;
+	}
+	.logo{
+		font-size: 20px;
+		line-height: 50px;
+	}
+	#menu li a{
+		padding: 0 180px;
+	}
+	#menu li a.active,
+	#menu li a:hover{
+		padding: 0 180px;
+	}
+	.cards{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	margin: 20px 20px;
+	
+	}
+	
+	.row{
+		margin: 0 20px;
+	}
+	.both{
+		grid-gap: 4rem;
+	}
+
+
+	.home-header .image{
+		flex:0 0 0;
+		max-width:0;
+		height: 80vh;
+	}
+	.home-header .content{
+		flex: 0 0 100%;
+		max-width: 100%;
+		height: 100vh;
+	}
+	
+	.inner-header .nav-menu{
+		
+		width:100%;
+		right: 0;
+		
+	}
+}
+
+@media only screen and (max-width: 600px){
+		
+	.cards{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1rem;
+	margin: 20px 20px;
+	
+	}
+
+	.both{
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 2rem;	
+	}
+
+
+}
+
+
+/*========== Slideshow container ==============*/
+/*.slideshow-container {
+	max-width: 800px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active {
+	background-color: #717171;
+}
+
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.numbertext {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: absolute;
+  top: 0;
+}*/
+/*
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}*/
+/*==========Sliding images Ends here=========*/
